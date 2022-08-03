@@ -16,13 +16,13 @@ a {
   text-decoration: none;
 }
 a:link {
-  color: hotpink;
+  color: darkcyan;
 }
 a:visited {
-  color: black;
+  color: darkcyan;
 }
 a:hover {
-  color: hotpink;
+  color: darkcyan;
 }
 a:active {
   color: lightgrey;
