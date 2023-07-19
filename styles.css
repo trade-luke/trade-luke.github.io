@@ -1,29 +1,43 @@
 body {
   background-color: FFFFFF;
-  text-align: center;
   font-family: "Source Code Pro", monospace;
   margin-top: 80px;
+}
+.container {
+  max-width: 512px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 3rem;
+}
+.box {
+  background: rgba(0,0,0,0.0);
+  padding: 24px;
 }
 h1 {
   text-transform: uppercase;
   font-weight: lighter;
-  font-size: 60px;
+  font-size: 40px;
 }
 p {
   color: dimgrey;
 }
 a {
   text-decoration: none;
+  color: dimgrey;
+  position: relative;
 }
-a:link {
-  color: darkcyan;
+a::before {
+  content: '';
+  background-color: hsla(146, 61%, 58%, .35);
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 5px;
+  z-index: -1;
+  transition: all .3s ease-in-out;
 }
-a:visited {
-  color: darkcyan;
-}
-a:hover {
-  color: cadetblue;
-}
-a:active {
-  color: lightgrey;
+a:hover::before {
+  bottom: 0;
+  height: 100%;
 }
