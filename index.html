@@ -1,41 +1,84 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
   <title>Luke Hefson</title>
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+    
+    body {
+    background-color: FFFFFF;
+    font-family: 'Source Code Pro', monospace;
+    margin-top: 80px;
+    }
+    .container {
+      max-width: 512px;
+      margin: 0 auto;
+      display: grid;
+      grid-gap: 3rem;
+    }
+    .box {
+      background: rgba(0,0,0,0.0);
+      padding: 24px;
+    }
+    h1 {
+      text-transform: uppercase;
+      font-weight: lighter;
+      font-size: 40px;
+      color: black;
+    }
+    a {
+      text-decoration: none;
+      color: dimgrey;
+      position: relative;
+    }
+    a::before {
+      content: '';
+      background-color: hsla(146, 61%, 58%, .35);
+      position: absolute;
+      left: 0;
+      bottom: 3px;
+      width: 100%;
+      height: 5px;
+      z-index: -1;
+      transition: all .3s ease-in-out;
+    }
+    a:hover::before {
+      bottom: 0;
+      height: 100%;
+    }
+  </style>
 </head>
-<body>
-  <div class="container">
-    <div class="box">
-  <h1>Luke Hefson</h1>
-  <p>Product leader and early <a href="https://github.com/lukehefson">GitHub</a> employee 🐙🐈‍⬛</p>
-  <p>Check out my work history on <a href="https://uk.linkedin.com/in/lukehefson">LinkedIn</a> to see the things I've shipped 🚢</p>
-  <p><a href="mailto:lukehefson@gmail.com">Email me</a> any time 📥 or find me on <a href="https://twitter.com/lukehefson" rel="me">Twitter</a> 🦜</p>
-<p>---</p>
-<details>
-  <summary># I offer consulting & fractional services 🤲</summary>
-    <ul>
-      <li><p>Go to market product strategy</p></li>
-      <li><p>Product operations</p></li>
-      <li><p>A <a href="https://sprig.com/podcast/luke-hefson">Paper Cuts project</a> tailored for <em>your</em> org</p></li>
-      <li><p>What I call: "Avoid the need to hire a PM" (aka helping engineers, managers, founders & other non-PMs to become more product-focused)</p></li>
-      <li><p>QA strategy</p></li>
-      <li><p>Career coaching for junior PMs</p></li>
-      <li><p>Building an Associate Product Manager (APM) program</p></li>
-      <li><p>Product management hiring and process</p></li>
-    </ul>
-</details>
-</br>
-<details>
-  <summary># People have nice things to say about me 💌</summary>
-    <ul>
-      <li><p>Tesimonials coming soon!</p></li>
-    </ul>
-</details>
-</br>
-</body>
-</html>
-      
+  <body>
+    <div class="container">
+      <div class="box">
+    <h1>Luke Hefson</h1>
+    <p>Product leader and early <a href="https://github.com/lukehefson">GitHub</a> employee 🐙🐈‍⬛</p>
+    <p>Check out my work history on <a href="https://uk.linkedin.com/in/lukehefson">LinkedIn</a> to see the things I've shipped 🚢</p>
+    <p><a href="mailto:lukehefson@gmail.com">Email me</a> any time 📥 or find me on <a href="https://twitter.com/lukehefson" rel="me">Twitter</a> 🦜</p>
+    <p>---</p>
+    <details>
+      <summary># I offer consulting & fractional services 🤲</summary>
+        <ul>
+          <li><p>Go to market product strategy</p></li>
+          <li><p>Product operations</p></li>
+          <li><p>A <a href="https://sprig.com/podcast/luke-hefson">Paper Cuts project</a> tailored for <em>your</em> org</p></li>
+          <li><p>What I call: "Avoid the need to hire a PM" (aka helping engineers, managers, founders & other non-PMs to become more product-focused)</p></li>
+          <li><p>QA strategy</p></li>
+          <li><p>Career coaching for junior PMs</p></li>
+          <li><p>Building an Associate Product Manager (APM) program</p></li>
+          <li><p>Product management hiring and process</p></li>
+        </ul>
+    </details>
+    </br>
+    <details>
+      <summary># People have nice things to say about me 💌</summary>
+        <ul>
+          <li><p>Tesimonials coming soon!</p></li>
+        </ul>
+    </details>
+    </br>
+    </br>
+  </body>
+</html>     
